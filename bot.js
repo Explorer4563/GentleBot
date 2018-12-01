@@ -50,7 +50,7 @@ bot.on('message', (msg) => {
           msg.channel.send(embed.embed(['EULA'], ['EULA에 동의하지 않으셨습니다\n봇의 일부 기능을 이용하실 수 없습니다.']))
           break
         default:
-          msg.channel.send(embed.embed(['EULA', 'EULA-LOGGING', 'USING', 'SO?'], ['봇 EULA입니다\n**-** 2018년 11월 24일 생성', '봇은 삭제하는 메시지를 로깅합니다\n원래는 흑역사 생성 용도였으나\n가끔은 분쟁 해결 용도로 쓰이기도 합니다', '`eula [true|false]', '어쨋든 __EULA에 동의하지 않는다면 봇의 일부 기능(restore)을 이용하실 수 없음__을 알려드립니다.']))
+          msg.channel.send(embed.embed(['EULA', 'EULA-LOGGING', 'USING', 'SO?'], ['봇 EULA입니다\n**-** 2018년 11월 24일 생성', '봇은 삭제하는 메시지를 로깅합니다\n원래는 흑역사 생성 용도였으나\n가끔은 분쟁 해결 용도로 쓰이기도 합니다', '!!eula [true|false]', '어쨋든 __EULA에 동의하지 않는다면 봇의 일부 기능(restore)을 이용하실 수 없음__을 알려드립니다.']))
       }
       DB.update('servers', ['id'], [msg.guild.id], ['opts'], [JSON.stringify(server.opts)])
     }
