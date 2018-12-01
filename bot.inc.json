@@ -4,7 +4,7 @@
 
   "cprefix": "!",
   "game": "{bprefix}!help",
-  "bprefix": "[ GentleBot ] ",
+  "bprefix": "GentleBot | !!help",
   "admins": [ "123456789123456798" ],
 
   "cmds_url": "./lib/cmds/",
