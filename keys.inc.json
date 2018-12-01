@@ -1,0 +1,19 @@
+{
+  "airKorea" : "",
+  "papago" : {
+    "smt" : {
+      "id" : "",
+      "secret" : "",
+      "url" : "https://openapi.naver.com/v1/language/translate"
+    }, "nmt" : {
+      "id" : "",
+      "secret" : "",
+      "url" : "https://openapi.naver.com/v1/papago/n2mt"
+    }, "auto" : {
+      "id" : "",
+      "secret" : "",
+      "url" : "https://openapi.naver.com/v1/papago/detectLangs"
+    }
+  },
+  "youtube" : ""
+}

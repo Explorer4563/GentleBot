@@ -1,0 +1,20 @@
+{
+  "token": "your_token",
+  "invite_url": "bot's_invite_url",
+
+  "cprefix": "!",
+  "game": "{bprefix}!help",
+  "bprefix": "[ GentleBot ] ",
+  "admins": [ "123456789123456798" ],
+
+  "cmds_url": "./lib/cmds/",
+  "mds_url": "./lib/modules/",
+
+  "eula": {
+    "using": false,
+    "strong": false
+  },
+  "usings": {
+    "logging": false
+  }
+}
