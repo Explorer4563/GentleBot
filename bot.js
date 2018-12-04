@@ -99,6 +99,14 @@ bot.on('message', (msg) => {
   }
 })
 
+bot.on('guildMemberAdd', (member) => {
+  embed.init(bot)
+  let server = guild(member)
+  const defaultChannel = member.guild.channels.find(channel => channel.type !== 'category' && (server.opts.wchannel ? channel.id === server.opts.wchannel : channel.permissionsFor(member.guild.me).has("SEND_MESSAGES")))
+  
+  if (defaultChannel && server.opts.welcome) defaultChannel.send(embed.embed([`:wave: 환영합니다!`], [`${member} ${server.opts.wmessage || ''}!`]))
+})
+
 bot.on('messageUpdate', (before, after) => {
   if (!before || !after || !after.guild || after.author.bot) return
   let server = guild(before)  
